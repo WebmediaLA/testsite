@@ -1,0 +1,46 @@
+// Grid Variables
+// ==========================================================================
+
+$grid-column: 60px;
+$grid-gutter: 20px;
+$base-font-size: 16px;
+
+// generate visual grid overlay on class .grid-overlay
+$grid-overlay: false;
+
+// fallback breakpoint (column count for < IE9)
+$ie-support: false;
+
+// label for your mobile first breakpoint
+$first-breakpoint: 'small';
+
+// Path to server's static files directory
+// Do not use a trailing slash
+$static-path: '..';
+
+// Project Variables
+// ==========================================================================
+
+// font sizes
+// =============================
+$xs: .25em;
+$s: .75em;
+$m: 1em;
+$l: 1.5em;
+$xl: 2em;
+$xlextra: 2.25em;
+$xxl: 2.5;
+
+
+// colors
+// =============================
+$fontcolor: #D0D0D0;
+$highlight: #4E9393;
+$bordercolor: white;
+
+// fonts
+// ============================
+$footertext: grey;
+$headingfont: 'Oswald', sans-serif;
+$logofont: palatino,platino linotype,georgia,times,times new roman,serif;
+$bodyfont: 'Open Sans', sans-serif;

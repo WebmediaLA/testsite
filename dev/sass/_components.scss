@@ -1,0 +1,529 @@
+// Import components
+// =============================================================================
+
+
+// BAUARBEITEN
+// =============================================================================
+
+body {
+	background: url("images/leather.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	
+}
+
+.upperbackground {
+	background: url("images/bigscratch.png") repeat-x scroll 0 0 black;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-content {
+	
+}
+
+.site-header {
+	
+}
+
+.main {
+	//background: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar {
+	
+}
+
+.site-footer {
+	
+}
+
+.lowerbackground {
+	background: url("images/leather.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 8px -5px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+// STRUCTURAL
+// =============================================================================
+
+
+.wrapper { 
+
+	font-family: $helvetica;
+	border-radius: 0px;
+	padding-bottom: .5em;
+}
+
+.top-wrapper {
+	box-shadow: 8px -5px 25px 0px rgba(255, 255, 255, 0.3);
+	background: rgba(0, 0, 0, 0.05);
+	padding-top: 1em;
+}
+
+
+.content-area, .widget-area {
+	margin: 1em 0em;
+
+	p {
+		padding-top: .5em;
+	}
+
+	ul {
+		margin-left: .25em;
+	}
+
+}
+
+.content-area {
+	padding-right: .25em;
+	padding-bottom: 0;
+}
+
+// HEADER
+// =============================================================================
+
+.header-image {
+	text-align: center;
+}
+
+.site-title {
+	margin-bottom: 0;
+}
+
+.site-branding {
+	text-align: center;
+}
+
+
+// MENU
+// =============================================================================
+
+.main-navigation {
+	margin: 1em 0 0.5em 0;
+}
+
+.menu {
+	font-family: $headingfont;
+    font-size: $m;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0px;
+    list-style-type: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-bottom: .25em;
+
+    
+
+ul {
+	margin: 0;
+	//background: rgba(0, 255, 255, 0.3);
+
+}
+
+li {
+    list-style-type: none;
+    border: none;
+    margin-left: 0;
+    
+	}
+
+li a {
+
+	display: block;
+    background: rgba(0, 0, 0, 0.2);
+    padding: .25em 0;
+    text-decoration: none;
+	font-size: $xl;
+	color: white;
+	text-shadow: 1px 1px 0 black, 1px 2px 0 black;
+	}
+
+li a:hover{
+	background: rgba(0, 255, 255, 0.2);
+	color: white;
+	
+}
+
+li.current_page_item {
+	
+}
+
+li.current_page_item a {
+    color: #DE0115;
+    box-shadow: 8px 0 25px 0px rgba(0, 0, 0, 0.3);
+   	
+
+   	}
+
+li:first-child {
+	
+	}
+}
+
+// FONTS
+// =============================================================================
+
+h1, h2, h3, h4 {
+	font-family: $headingfont;
+	//text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 black;
+    text-transform: uppercase;
+    
+
+    a {
+    	text-decoration: none;
+    }
+}
+
+h1 {
+	font-size: $xl;
+}
+
+.site-content h1 {
+	background: rgba(255, 255, 255, 0.1);
+	padding: .25em;
+	//margin-right: .25em;
+	border-left: 4px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.page-title {
+	margin-bottom: 1em;
+}
+
+.wrapper {
+	font-family: $bodyfont;
+}
+
+p {
+	line-height: 1.25em;
+}
+
+body {
+	color: $fontcolor;
+}
+
+// LINKS
+// =============================================================================
+
+a {
+  color: $highlight; background: transparent;
+  -o-transition:color .1s ease-out, background 1s ease-in;
+  -ms-transition:color .1s ease-out, background 1s ease-in;
+  -moz-transition:color .1s ease-out, background 1s ease-in;
+  -webkit-transition:color .1s ease-out, background 1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .1s ease-out, background 1s ease-in;
+}
+a:hover { color:red; background: transparent; }
+
+// SLIDER
+// =============================================================================
+
+.slider {
+	text-align: center;
+	margin-bottom: 2em;
+	box-shadow: 8px 0 25px 0px rgba(0, 0, 0, 0.3);
+
+	.soliloquy-container {
+		margin: 0 auto;
+	}
+}
+
+
+// WIDGETS
+// =============================================================================
+
+.widget {
+	margin-bottom: 1.5em;
+	//border-right: 2px solid black;
+	
+
+	.widget-title {
+		font-size: $l;
+		margin-bottom: .5em;
+	}
+}
+
+// style really simple image plugin
+
+
+
+    .rsg_item {  
+        position: relative;  
+        float: left;  
+        cursor: pointer;
+        margin: .2em;
+        max-width: 45%;  
+    }  
+      
+    .rsg_item:before {  
+        content: "";  
+        display: block;  
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        background: rgba(0,255,255, 0.2);  
+        -moz-transition: background .3s linear;  
+        -webkit-transition: background .3s linear;  
+        -o-transition: background .3s linear;  
+        transition: background .3s linear;  
+    }  
+      
+    .rsg_item:hover:before {  
+        background: none;  
+    }  
+
+
+
+// COMMENTS
+// =============================================================================
+
+.comments-area {
+	padding-top: .5em;
+	margin-top: 2em;
+	font-size: 85%;
+}
+
+.comment-list {
+	background: rgba(0, 0, 0, 0.2);
+	padding: .25em;
+}
+.form-allowed-tags {
+	display: none;
+}
+
+
+.comment-form {
+
+}
+
+.comment-body {
+	margin: 1em 0;
+
+	.comment-content {
+		margin: .5em 0;
+		padding: .5em;
+		background: rgba(255, 255, 255, 0.1);
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+// POST NAVIGATION
+// =============================================================================
+
+.post-navigation {
+	background: rgba(255, 255, 255, 0.1);
+	overflow: auto;
+	padding: .5em;
+}
+
+.screen-reader-text {
+	display: none;
+
+}
+
+.nav-previous {
+		float: left;
+	}
+
+	.nav-next {
+		float: right;
+	}
+
+
+// SIDEBAR
+// =============================================================================
+
+.sidebar {
+	//border-left: 2px solid $bordercolor;
+}
+
+// FOOTER
+// =============================================================================
+
+.site-footer {
+	padding-top: 3em;
+}
+
+.site-info {
+	text-align: center;
+	font-size: $s;
+}
+
+
+// POSTS
+// =============================================================================
+
+.post {
+	//border: 1px solid grey;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+
+.entry-title {
+	font-size: $l;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.post-image {
+	
+	display: block;
+	text-align: center;
+	overflow: hidden;
+
+	img {
+		
+	}
+}
+
+.post-content {
+	
+}
+
+.format-video {
+	//background: red;
+}
+
+
+
+// FEATURED POSTS
+// =============================================================================
+
+.featured-posts {
+overflow: hidden;
+padding: 1em 0;
+border-top: 1px solid rgba(255, 255, 255, 0.3);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+background: rgba(255, 255, 255, 0.1);
+
+
+	h1 {
+		color: white;
+		text-shadow: none;
+		background: none;
+	}
+
+
+
+  .feat-post {
+    margin-bottom: 1em;
+    box-shadow: 2px -2px 4px 0px rgba(0, 0, 0, 0.3);
+    .post {
+      margin: 0;
+
+
+    }
+  }
+
+.entry-header {
+	position: absolute;
+	width: 100%;
+	bottom: 1em;
+	background: rgba(0, 0, 0, 0.9);
+	text-align: center;
+	padding: .25em;
+
+
+	
+	}
+
+.entry-title {
+	font-size: $l;
+	margin-top: .25em;
+	margin-bottom: .05em;
+}
+
+.readmore {
+	text-align: center;
+	font-size: 120%;
+	margin-top: .5em;
+
+}
+
+.post-content {
+  width: 100%;
+ height: 11em; 
+ position: relative;
+ box-shadow: 8px -5px 25px 0px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.post-content a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+
+}
+
+.post-content:hover {
+	background: rgba(0,0,0, 0.9);  
+        -moz-transition: background .6s linear;  
+        -webkit-transition: background .6s linear;  
+        -o-transition: background .6s linear;  
+        transition: background .6s linear;  
+
+	.entry-header{
+		display: none;
+	}
+
+
+.entry-content {
+	visibility: visible;
+	opacity: 1;
+  transition: opacity 2s linear;
+	h1 {
+		color: white;
+		text-shadow: none;
+	}
+}
+}
+
+.entry-content {
+color: white;
+padding: .5em;
+visibility: hidden;
+
+}
+
+ }
+
+
+// POST META
+// =============================================================================
+
+.entry-meta {
+	font-size: $s;
+	margin-bottom: .25em;
+}
+
+.entry-content {
+	margin-bottom: 1em;
+}
+
+// IMAGES
+// =============================================================================
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+

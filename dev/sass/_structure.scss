@@ -1,0 +1,146 @@
+// Structure
+// =============================================================================
+
+/* create 5 column fixed layout */
+@include breakpoint(5, $label: 'mobile') {}
+
+/* create 8 column layout with sidebar */
+@include breakpoint(9, $label: 'tablet') {
+  .full { width: fluid(9); }
+  .quarter { width: fluid(2); }
+  .half { width: fluid(4.5); }
+  .threequarter { width: fluid(7); }
+  .third { width: fluid(3); }
+  .sidebar { width: fluid(3); }
+  .main { width: fluid(6); }
+
+
+.main-navigation {
+  margin-bottom: sem;
+}
+
+  .menu {
+
+
+ 
+ul {
+  text-align: left;
+  
+}
+
+   li {
+
+    display: inline-block;
+  }  
+
+li a {
+  padding: .25em 1em;
+  font-size: $m;
+
+   }
+
+  li a:hover {
+    
+  }
+
+   li:first-child {
+    
+      }
+
+   li:last-child {
+     
+      }
+
+  }
+
+// FEATURED POSTS
+// =============================================================================
+
+.featured-posts {
+
+margin: 0 0 2em 0;
+
+  .feat-post {
+    width: 24%;
+    float: left;
+    margin: 0 .5%;
+    
+     }
+
+.post-content {
+ 
+  width: 100%;
+  color: white;
+  
+}
+
+ }
+
+// POSTS
+// =============================================================================
+
+
+.post-image {
+  width: 35%;
+  float: left;
+  margin-right: 1em;
+  margin-top: 1em;
+
+}
+
+.post-content {
+  float: right;
+  width: 60%;
+}
+
+.page{
+
+  .post-content {
+    width: 100%;
+  }
+  
+}
+
+.entry-title {
+  margin-top: 0;
+}
+
+.comments-area {
+  width: 60%;
+  float: right;
+}
+
+// LANDING WIDGETS
+// =============================================================================
+
+.landing-widget {
+  width: 48%;
+  float: left;
+  padding: 0 .25em;
+}
+
+ }
+
+/* create 12 column layout with sidebar */
+@include breakpoint(12, $label: 'desktop') {
+  .full { width: fluid(12); }
+  .quarter { width: fluid(2); }
+  .half { width: fluid(6); }
+  .threequarter { width: fluid(9); }
+  .third { width: fluid(4); }
+  .sidebar { width: fluid(3); }
+  .main { width: fluid(9); }
+
+  }
+
+/* create 16 column layout with sidebar */
+@include breakpoint(16, $label: 'bigscreen') {
+  .full { width: fluid(16); }
+  .quarter { width: fluid(4); }
+  .half { width: fluid(8); }
+  .threequarter { width: fluid(12); }
+  .third { width: fluid(5); }
+  .sidebar { width: fluid(4); }
+  .main { width: fluid(12); }
+
+  }
